@@ -1,0 +1,92 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : eBike
+Version: P-2019.03
+Date   : Sat Dec  7 18:07:22 2019
+****************************************
+
+Operating Conditions: tt0p85v25c   Library: saed32rvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: iA2D/batt_reg[8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iPID/drv_mag_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  eBike              16000                 saed32rvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iA2D/batt_reg[8]/CLK (DFFARX1_RVT)                      0.00       0.00 r
+  iA2D/batt_reg[8]/QN (DFFARX1_RVT)                       0.10       0.10 f
+  U1763/Y (AO21X1_RVT)                                    0.09       0.19 f
+  U2150/Y (NAND2X0_RVT)                                   0.04       0.23 r
+  U2296/Y (NAND4X0_RVT)                                   0.08       0.32 f
+  U2297/Y (INVX1_RVT)                                     0.09       0.41 r
+  U2137/Y (NAND2X0_RVT)                                   0.07       0.48 f
+  U1958/Y (NAND2X0_RVT)                                   0.09       0.58 r
+  iPID/sub_66/U2_1/CO (FADDX1_RVT)                        0.13       0.70 r
+  iPID/sub_66/U2_2/CO (FADDX1_RVT)                        0.11       0.81 r
+  iPID/sub_66/U2_3/CO (FADDX1_RVT)                        0.11       0.93 r
+  iPID/sub_66/U2_4/CO (FADDX1_RVT)                        0.11       1.04 r
+  iPID/sub_66/U2_5/CO (FADDX1_RVT)                        0.11       1.15 r
+  iPID/sub_66/U2_6/CO (FADDX1_RVT)                        0.11       1.27 r
+  iPID/sub_66/U2_7/CO (FADDX1_RVT)                        0.11       1.38 r
+  iPID/sub_66/U2_8/CO (FADDX1_RVT)                        0.11       1.49 r
+  iPID/sub_66/U2_9/CO (FADDX1_RVT)                        0.11       1.61 r
+  iPID/sub_66/U2_10/CO (FADDX1_RVT)                       0.11       1.72 r
+  iPID/sub_66/U2_11/CO (FADDX1_RVT)                       0.11       1.83 r
+  iPID/sub_66/U2_12/Y (XOR3X2_RVT)                        0.12       1.95 f
+  U1974/Y (NAND2X0_RVT)                                   0.12       2.07 r
+  U1319/Y (OA21X1_RVT)                                    0.08       2.15 r
+  U1318/Y (OA21X1_RVT)                                    0.08       2.23 r
+  iPID/add_0_root_add_0_root_add_73_2/U1_2/CO (FADDX1_RVT)
+                                                          0.11       2.34 r
+  iPID/add_0_root_add_0_root_add_73_2/U1_3/CO (FADDX1_RVT)
+                                                          0.11       2.45 r
+  iPID/add_0_root_add_0_root_add_73_2/U1_4/CO (FADDX1_RVT)
+                                                          0.11       2.57 r
+  iPID/add_0_root_add_0_root_add_73_2/U1_5/CO (FADDX1_RVT)
+                                                          0.11       2.68 r
+  iPID/add_0_root_add_0_root_add_73_2/U1_6/CO (FADDX1_RVT)
+                                                          0.11       2.79 r
+  iPID/add_0_root_add_0_root_add_73_2/U1_7/CO (FADDX1_RVT)
+                                                          0.11       2.91 r
+  iPID/add_0_root_add_0_root_add_73_2/U1_8/CO (FADDX1_RVT)
+                                                          0.11       3.02 r
+  iPID/add_0_root_add_0_root_add_73_2/U1_9/CO (FADDX1_RVT)
+                                                          0.11       3.13 r
+  iPID/add_0_root_add_0_root_add_73_2/U1_10/CO (FADDX1_RVT)
+                                                          0.11       3.25 r
+  iPID/add_0_root_add_0_root_add_73_2/U1_11/CO (FADDX1_RVT)
+                                                          0.11       3.36 r
+  iPID/add_0_root_add_0_root_add_73_2/U1_12/CO (FADDX1_RVT)
+                                                          0.11       3.47 r
+  U1944/Y (XNOR3X1_RVT)                                   0.16       3.63 r
+  iPID/drv_mag_reg[2]/RSTB (DFFSSRX1_RVT)                 0.03       3.66 r
+  data arrival time                                                  3.66
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.12       3.88
+  iPID/drv_mag_reg[2]/CLK (DFFSSRX1_RVT)                  0.00       3.88 r
+  library setup time                                     -0.14       3.74
+  data required time                                                 3.74
+  --------------------------------------------------------------------------
+  data required time                                                 3.74
+  data arrival time                                                 -3.66
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+1
